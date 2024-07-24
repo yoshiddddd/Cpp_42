@@ -11,14 +11,18 @@
 #include <iomanip>
 #include <cstdio>
 #include "Contact.hpp"
+
+// 動的にサイズ変更してくれる
 typedef std::string str;
 class PhoneBook{
     public:
-        // PhoneBook();
+        PhoneBook();
         // ~PhoneBook();
         void addContact();
         void searchContact();
     private:
+    int current_num;
+    int size;
     Contact contact[8];
 };
 

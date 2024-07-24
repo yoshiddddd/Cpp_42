@@ -4,14 +4,15 @@
 #include "PhoneBook.hpp"
 class Contact{
     public:
-        // Contact();
+        Contact();
         // ~Contact();
+        
     private:
-        char first_name;
-        char last_name;
-        char nickname;
-        char phone_number;
-        char secret;
+        str first_name;
+        str last_name;
+        str nickname;
+        str phone_number;
+        str secret;
 };
 
 #endif
