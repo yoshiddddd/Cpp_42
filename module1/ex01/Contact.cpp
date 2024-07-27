@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 18:36:19 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 19:17:46 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,27 @@ void PhoneBook::addContact(){
     
 }
 
+str PhoneBook::call_get_function(int index, int type){
+    str string;
+    Contact Contact;
+    if(type == 0){
+        string = this->contact[index].get_first_name();
+    }
+    else if(type == 1){
+        string = this->contact[index].get_last_name();
+    }
+    else if(type == 2){
+        string = this->contact[index].get_nickname();
+    }
+    if(string.length() > 9){
+            string = string.substr(0,9) + ".";
+        }
+
+    return string;
+}
+
 void PhoneBook::searchContact(){
+    Contact Contact;
     if(this->current_num == 0){
         std::cout << "No data" << std::endl;
         return;
@@ -51,10 +71,14 @@ void PhoneBook::searchContact(){
     std::cout << "     index|first name| last name|  nickname" << std::endl;
     while(this->current_num> roop)
     {
+        str first_name = this->call_get_function(roop,FIRST_NAME);
+        str last_name = this->call_get_function(roop,LAST_NAME);
+        str nickname = this->call_get_function(roop,NICKNAME);
+        
         std::cout << std::setw(10) << roop << "|";
-        std::cout << std::setw(10) << this->contact[roop].get_first_name() << "|";
-        std::cout << std::setw(10) << this->contact[roop].get_last_name() << "|";
-        std::cout << std::setw(10) << this->contact[roop].get_nickname() << std::endl;
+        std::cout << std::setw(10) << first_name << "|";
+        std::cout << std::setw(10) << last_name << "|";
+        std::cout << std::setw(10) << nickname<< std::endl;
         roop++;
     }
     str i;
@@ -66,5 +90,10 @@ void PhoneBook::searchContact(){
         std::cout << "Invalid index" << std::endl;
         return;
     }
-    std::cout << "SEARCH" << std::endl;
+    std::cout << "first name : " << this->contact[index].get_first_name() << std::endl;
+    std::cout << "last name : " << this->contact[index].get_last_name() << std::endl;
+    std::cout << "nickname : " << this->contact[index].get_nickname() << std::endl;
+    std::cout << "phone number : " << this->contact[index].get_phone_number() << std::endl;
+    std::cout << "secret : " << this->contact[index].get_secret() << std::endl;
+    // std::cout << "SEARCH" << std::endl;
 }

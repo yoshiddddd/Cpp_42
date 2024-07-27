@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 11:52:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 17:50:31 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 19:16:34 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,7 @@ str Contact::get_nickname(){
 }
 str Contact::get_phone_number(){
     return this->phone_number;
+}
+str Contact::get_secret(){
+    return this->secret;
 }
