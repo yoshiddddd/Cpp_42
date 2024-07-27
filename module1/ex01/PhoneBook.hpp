@@ -16,7 +16,9 @@
 typedef std::string str;
 class PhoneBook{
     public:
-        PhoneBook();
+        // PhoneBook(){
+        //     current_num = 0;
+        // };
         // ~PhoneBook();
         void addContact();
         void searchContact();

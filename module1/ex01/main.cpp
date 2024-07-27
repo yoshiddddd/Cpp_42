@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:33:39 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/23 23:16:39 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 12:41:10 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,10 @@ int main(void)
 {
     str line;
     PhoneBook PhoneBook;
+    
     while(1)
     {
-        std::cout << "Type ADD, SEARCH or EXIT : ";
+        std::cout << "Please ADD, SEARCH or EXIT : ";
         
         std::getline(std::cin, line);
         if(!line.compare("ADD"))
@@ -36,7 +37,7 @@ int main(void)
             std::cout << "GOOD BYE" << std::endl;
             break;
         }
-        std::cout << line << std::endl;
+        // std::cout << line << std::endl;
     }
     return 0;
     // int  phone_book[8];
