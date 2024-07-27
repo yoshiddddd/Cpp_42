@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 19:17:46 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 19:39:52 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,41 @@ void PhoneBook::addContact(){
     }
     std::cout << "Please enter your first name : ";
     std:: getline(std::cin, first_name);
+    if(first_name.empty()){
+        std::cout << "Invalid first name" << std::endl;
+        return;
+    }
     std::cout << "Please enter your last name : ";
     std:: getline(std::cin, last_name);
+    if(last_name.empty()){
+        std::cout << "Invalid last name" << std::endl;
+        return;
+    }
     std::cout << "Please enter your nickname : ";
     std:: getline(std::cin, nickname);
+    if(nickname.empty()){
+        std::cout << "Invalid nickname" << std::endl;
+        return;
+    }
     std::cout << "Please enter your phone number : ";
     std:: getline(std::cin, phone_number);
+    if(phone_number.empty()){
+        std::cout << "Invalid phone number" << std::endl;
+        return;
+    }
     std::cout << "Please enter your secret :";
     std:: getline(std::cin, secret);
+    if(secret.empty()){
+        std::cout << "Invalid secret" << std::endl;
+        return;
+    }
 // system("clear");
     // this->contact[this->current_num].set_first_name(first_name);
     this->contact[this->current_num].set_data(first_name,last_name,nickname,phone_number,secret);
-    std::cout << this->contact[this->current_num].get_first_name() << std::endl;
-    
+    std::cout << this->current_num << std::endl;
+    if(this->current_num<8 && this->is_first_time == 0){
+        this->size++;
+    }
     this->current_num++;
     
 }
@@ -69,7 +91,7 @@ void PhoneBook::searchContact(){
     }
     int roop=0;
     std::cout << "     index|first name| last name|  nickname" << std::endl;
-    while(this->current_num> roop)
+    while(this->size> roop)
     {
         str first_name = this->call_get_function(roop,FIRST_NAME);
         str last_name = this->call_get_function(roop,LAST_NAME);
@@ -90,6 +112,7 @@ void PhoneBook::searchContact(){
         std::cout << "Invalid index" << std::endl;
         return;
     }
+    std::cout << "id : " << index << std::endl;
     std::cout << "first name : " << this->contact[index].get_first_name() << std::endl;
     std::cout << "last name : " << this->contact[index].get_last_name() << std::endl;
     std::cout << "nickname : " << this->contact[index].get_nickname() << std::endl;
