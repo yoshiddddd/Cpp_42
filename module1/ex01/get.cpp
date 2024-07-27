@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 11:52:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 13:19:39 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 17:50:31 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,13 @@ void Contact::set_data(str first_name , str last_name , str nickname , str phone
 
 str Contact::get_first_name(){
     return this->first_name;
+}
+str Contact::get_last_name(){
+    return this->last_name;
+}
+str Contact::get_nickname(){
+    return this->nickname;
+}
+str Contact::get_phone_number(){
+    return this->phone_number;
 }

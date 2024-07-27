@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 13:19:42 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 17:52:00 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void PhoneBook::addContact(){
     str phone_number;
     str secret;
     if(this->current_num == 8){
+        this->is_first_time = 1;
         this->current_num = 0;
-    
     }
     std::cout << "Please enter your first name : ";
     std:: getline(std::cin, first_name);
@@ -43,5 +43,28 @@ void PhoneBook::addContact(){
 }
 
 void PhoneBook::searchContact(){
+    if(this->current_num == 0){
+        std::cout << "No data" << std::endl;
+        return;
+    }
+    int roop=0;
+    std::cout << "     index|first name| last name|  nickname" << std::endl;
+    while(this->current_num> roop)
+    {
+        std::cout << std::setw(10) << roop << "|";
+        std::cout << std::setw(10) << this->contact[roop].get_first_name() << "|";
+        std::cout << std::setw(10) << this->contact[roop].get_last_name() << "|";
+        std::cout << std::setw(10) << this->contact[roop].get_nickname() << std::endl;
+        roop++;
+    }
+    str i;
+    int index = 0;    
+    std::cout << "what index do you want to search? :";
+    std:: getline(std::cin,i);
+    index = std::stoi(i);
+    if(index < 0 || index > 7){
+        std::cout << "Invalid index" << std::endl;
+        return;
+    }
     std::cout << "SEARCH" << std::endl;
 }

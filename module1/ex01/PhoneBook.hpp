@@ -23,6 +23,7 @@ class PhoneBook{
         void addContact();
         void searchContact();
     private:
+    int is_first_time;
     int current_num;
     int size;
     Contact contact[8];
