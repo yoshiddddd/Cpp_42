@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 19:59:30 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 20:11:13 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,6 @@ void PhoneBook::searchContact(){
         std::cout << "Invalid index" << std::endl;
         return;
     }
-    std::cout << "id : " << index << std::endl;
     std::cout << "first name : " << this->contact[index].get_first_name() << std::endl;
     std::cout << "last name : " << this->contact[index].get_last_name() << std::endl;
     std::cout << "nickname : " << this->contact[index].get_nickname() << std::endl;
