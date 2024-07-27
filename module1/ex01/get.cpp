@@ -6,14 +6,14 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 11:52:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 12:43:58 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 13:19:39 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 Contact::Contact() {
 }
-void Contact::set_first_name(str first_name , str last_name , str nickname , str phone_number , str secret){
+void Contact::set_data(str first_name , str last_name , str nickname , str phone_number , str secret){
     this->first_name=first_name;
     this->last_name=last_name;
     this->nickname=nickname;

@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 12:44:37 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 13:19:42 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ void PhoneBook::addContact(){
     str nickname;
     str phone_number;
     str secret;
+    if(this->current_num == 8){
+        this->current_num = 0;
     
+    }
     std::cout << "Please enter your first name : ";
     std:: getline(std::cin, first_name);
     std::cout << "Please enter your last name : ";
@@ -32,7 +35,7 @@ void PhoneBook::addContact(){
     std:: getline(std::cin, secret);
 // system("clear");
     // this->contact[this->current_num].set_first_name(first_name);
-    this->contact[this->current_num].set_first_name(first_name,last_name,nickname,phone_number,secret);
+    this->contact[this->current_num].set_data(first_name,last_name,nickname,phone_number,secret);
     std::cout << this->contact[this->current_num].get_first_name() << std::endl;
     
     this->current_num++;

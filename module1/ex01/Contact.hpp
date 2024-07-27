@@ -15,7 +15,7 @@ class Contact{
         Contact();
         // ~Contact();
         str get_first_name(); 
-        void set_first_name(str first_name , str last_name , str nickname , str phone_number , str secret);
+        void set_data(str first_name , str last_name , str nickname , str phone_number , str secret);
     private:
     // private変数にアクセスするにはpublicメンバ関数を使う必要がある。作る
         str first_name;
