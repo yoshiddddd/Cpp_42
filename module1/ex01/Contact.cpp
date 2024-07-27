@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 19:39:52 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/07/27 19:59:30 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,6 +107,10 @@ void PhoneBook::searchContact(){
     int index = 0;    
     std::cout << "what index do you want to search? :";
     std:: getline(std::cin,i);
+    if(i.empty()){
+        std::cout << "Please put index" << std::endl;
+        return;
+    }
     index = std::stoi(i);
     if(index < 0 || index > 7 ||(index >= this->current_num && this->is_first_time == 0)){
         std::cout << "Invalid index" << std::endl;
