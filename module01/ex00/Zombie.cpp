@@ -6,11 +6,11 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 21:31:24 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/09/26 21:31:25 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/09/26 21:32:10 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-Zombie::Zombie()
+Zombie::Zombie(str name)
 {
     this->name = name;
 	std::cout << "Zombie" <<name <<"is born" << std::endl;
@@ -21,7 +21,7 @@ Zombie::~Zombie()
 }
 void Zombie::announce(void)
 {
-	this->name = "Zombie";
+	// this->name = "Zombie";
 	std::cout << this->name << " BraiiiiiiinnnzzzZ..." << std::endl;
 	
 }
