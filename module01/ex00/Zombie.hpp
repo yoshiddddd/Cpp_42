@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 15:41:48 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/31 18:08:07 by kyoshida         ###   ########.fr       */
+/*   Updated: 2024/09/26 21:30:33 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,13 @@
 typedef std::string str;
 class Zombie{
     public:
-        Zombie();
+        Zombie(str name);
         ~Zombie();
-        void announce(void);
         // void set_name(str name);
+        Zombie *newZombie(str name);
+        void randomChump(str name);
     private:
+        void announce(void);
     str name;
 };
 
