@@ -6,12 +6,13 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 21:31:24 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/09/27 11:46:44 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/10/01 14:20:37 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-Zombie::Zombie(str name)
-{
+#include "Zombie.hpp"
+
+Zombie::Zombie(str name){
     this->name = name;
 	std::cout << "Zombie" <<name <<"is born" << std::endl;
 }
