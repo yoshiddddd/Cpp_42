@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/04 13:09:02 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/09/27 11:47:07 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/10/14 15:37:31 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
