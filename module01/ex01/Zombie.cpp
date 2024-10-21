@@ -6,15 +6,14 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:55:02 by kyoshida          #+#    #+#             */
-/*   Updated: 2024/10/15 23:37:49 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2024/10/21 22:09:09 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 Zombie::Zombie(){
-    this->name = name;
-	std::cout << "Zombie" <<name <<"is born" << std::endl;
+	std::cout << "Zombie" <<this->name <<"is born" << std::endl;
 }
 
 Zombie::~Zombie()
