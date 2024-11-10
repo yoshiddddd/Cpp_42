@@ -1,6 +1,6 @@
 NAME=ex01
 SRCS=main.cpp Zombie.cpp zombieHorde.cpp
-FLAGS=-Wall -Wextra -Werror
+FLAGS=-Wall -Wextra -Werror -std=c++98
 CC=c++
 OBJ=$(SRCS:.cpp=.o)
 
