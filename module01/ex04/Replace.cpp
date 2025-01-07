@@ -10,7 +10,9 @@ void Replace::replace_line(str &line)
         start = line.find(Replace::m_s1,start);
         if(start == std::string::npos)
             break;
+            //m_s1分の文字列を削除
         line.erase(start,Replace::m_s1.length());
+        //削除した部分にm_s2を代入
         line.insert(start,Replace::m_s2);
         start += Replace::m_s2.length();
 
