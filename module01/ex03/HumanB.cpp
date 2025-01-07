@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 10:40:57 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/04 18:31:24 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/07 16:19:30 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ HumanB::HumanB(std::string name) : m_name(name) {}
 void HumanB::setWeapon(Weapon& weapon)
 {
 	this->m_weapon = &weapon;
-	nullptr;
 }
 
 void HumanB::attack(void) const

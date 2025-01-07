@@ -1,6 +1,6 @@
 NAME=ex03
 SRCS=main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
-FLAGS=-Wall -Wextra -Werror -std=c++98
+FLAGS=-Wall -Wextra -Werror -std=c++98 
 CC=c++
 OBJ=$(SRCS:.cpp=.o)
 
