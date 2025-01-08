@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Replace.cpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/09 08:06:59 by yoshidakazu       #+#    #+#             */
+/*   Updated: 2025/01/09 08:55:36 by yoshidakazu      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Replace.hpp"
 
 void Replace::replace_line(str &line)
@@ -25,7 +37,7 @@ Replace::Replace(str filename, str s1, str s2) : m_filename(filename), m_s1(s1),
         std::cout << "error" << std::endl;
     
     std::ifstream infile(m_filename);
-    if(infile.is_open() == false)
+    if(!infile)
     {
         std::cout << "already opened" << std::endl;
     }
