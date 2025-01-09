@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 08:06:59 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/09 08:55:36 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/09 09:04:46 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ Replace::Replace(str filename, str s1, str s2) : m_filename(filename), m_s1(s1),
     std::ifstream infile(m_filename);
     if(!infile)
     {
-        std::cout << "already opened" << std::endl;
+        std::cout << "error infile" << std::endl;
     }
     std::ofstream outfile(m_filename+".replace");
     if(!outfile)
