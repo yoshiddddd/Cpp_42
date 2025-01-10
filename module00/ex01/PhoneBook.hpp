@@ -15,6 +15,7 @@
 #define FIRST_NAME 0
 #define LAST_NAME 1
 #define NICKNAME 2
+#define MAX_LENGTH 9
 // 動的にサイズ変更してくれる
 typedef std::string str;
 class PhoneBook{

@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/10 12:11:17 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/10 12:55:08 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,16 +67,16 @@ void PhoneBook::addContact(){
 str PhoneBook::call_get_function(int index, int type){
     str string;
     Contact Contact;
-    if(type == 0){
+    if(type == FIRST_NAME){
         string = this->contact[index].get_first_name();
     }
-    else if(type == 1){
+    else if(type == LAST_NAME){
         string = this->contact[index].get_last_name();
     }
-    else if(type == 2){
+    else if(type == NICKNAME){
         string = this->contact[index].get_nickname();
     }
-    if(string.length() > 9){
+    if(string.length() > MAX_LENGTH){
             string = string.substr(0,9) + ".";
         }
 
