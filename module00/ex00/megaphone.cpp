@@ -6,12 +6,11 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:33:45 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/21 19:26:33 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/10 11:43:59 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-
 void ft_toupper(char *str){
     int i = 0;
     while(str[i]){
@@ -21,7 +20,6 @@ void ft_toupper(char *str){
             std::cout << str[i];
         i++;
     }
-    std::cout << std::endl;
 }
 // <<によって出力される文字列は、標準出力ストリームに書き込まれる。
 int main(int argc, char *argv[]){
