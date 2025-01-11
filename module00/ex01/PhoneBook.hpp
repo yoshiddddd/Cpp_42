@@ -26,6 +26,7 @@ class PhoneBook{
         // ~PhoneBook();
         void addContact();
         void searchContact();
+        int is_valid_num(str num);
         str call_get_function(int index, int type);
     private:
     int is_first_time;

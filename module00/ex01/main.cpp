@@ -6,10 +6,9 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:33:39 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 12:41:10 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/11 17:28:20 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "PhoneBook.hpp"
 
@@ -31,8 +30,7 @@ int main(void)
         {
             PhoneBook.searchContact();
         }
-        else
-        if(!line.compare("EXIT"))
+        else if(!line.compare("EXIT"))
         {
             std::cout << "GOOD BYE" << std::endl;
             break;

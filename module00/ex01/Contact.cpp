@@ -6,12 +6,11 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/10 12:58:24 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/11 21:50:48 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-
 void PhoneBook::addContact(){
     // std::cout<< contact[0] << std::endl; 
     str first_name;
@@ -110,7 +109,10 @@ void PhoneBook::searchContact(){
         std::cout << "Please put index" << std::endl;
         return;
     }
-    //TODO stoiの再実装必要あり→オーバーフローするとabortする
+    if(i.length() > 1){
+        std::cout << "Invalid index" << std::endl;
+        return;
+    }
     index = std::stoi(i);
     if(index < 0 || index > 7 ||(index >= this->current_num && this->is_first_time == 0)){
         std::cout << "Invalid index" << std::endl;
