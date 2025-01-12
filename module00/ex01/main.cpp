@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:33:39 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/12 09:06:15 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 13:48:36 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,12 @@ int main(void)
         std::cout << "Please ADD, SEARCH or EXIT : ";
         
         std::getline(std::cin, line);
+        if(std::cin.eof()||std::cin.fail())
+        {
+            std::cout << "error" << std::endl;
+            exit(0);
+        }
+    
         if(!line.compare("ADD"))
         {
             PhoneBook.addContact();

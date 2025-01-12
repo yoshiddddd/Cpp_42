@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   megaphone.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:33:45 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/12 10:28:17 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 13:38:19 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void ft_toupper(char *str){
         i++;
     }
 }
-// <<によって出力される文字列は、標準出力ストリームに書き込まれる。
+
 int main(int argc, char *argv[]){
     if (argc == 1){
         std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;

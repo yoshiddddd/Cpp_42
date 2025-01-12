@@ -15,16 +15,12 @@
 #define FIRST_NAME 0
 #define LAST_NAME 1
 #define NICKNAME 2
-#define MAX_LENGTH 9
-// 動的にサイズ変更してくれる
+#define MAX_VIEW_LENGTH 9
+
 typedef std::string str;
 class PhoneBook{
     public:
-        PhoneBook(){
-            current_num = 0;
-            size = 0;
-        };
-        // ~PhoneBook();
+        PhoneBook();
         void addContact();
         void searchContact();
         int is_valid_num(str num);
