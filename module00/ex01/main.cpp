@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:33:39 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/11 17:28:20 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 09:06:15 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ int main(void)
             std::cout << "GOOD BYE" << std::endl;
             break;
         }
-        // std::cout << line << std::endl;
     }
     return 0;
-    // int  phone_book[8];
 }

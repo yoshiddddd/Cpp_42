@@ -20,9 +20,9 @@
 typedef std::string str;
 class PhoneBook{
     public:
-        // PhoneBook(){
-        //     current_num = 0;
-        // };
+        PhoneBook(){
+            current_num = 0;
+        };
         // ~PhoneBook();
         void addContact();
         void searchContact();
