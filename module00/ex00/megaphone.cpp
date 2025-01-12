@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:33:45 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/10 11:43:59 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 10:28:17 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ int main(int argc, char *argv[]){
     while(*++argv){
         ft_toupper(*argv);
     }
+    std::cout << std::endl;
     return 0;
 }
