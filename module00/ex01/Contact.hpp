@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 22:32:45 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/07/27 22:32:47 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 11:52:56 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 #include <cstdlib>
 #include <iomanip>
 #include <cstdio>
+#include <sstream>
 // #include "PhoneBook.hpp"
 typedef std::string str;
 class Contact{

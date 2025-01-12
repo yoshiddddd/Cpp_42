@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/12 09:05:18 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 11:53:17 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,9 @@ void PhoneBook::searchContact(){
         std::cout << "Invalid index" << std::endl;
         return;
     }
-    index = std::stoi(i);
+    // index = std::stoi(i);
+    std::stringstream ss(i);
+    ss >> index;
     if(index < 0 || index > 7 ||(index >= this->current_num && this->is_first_time == 0)){
         std::cout << "Invalid index" << std::endl;
         return;
