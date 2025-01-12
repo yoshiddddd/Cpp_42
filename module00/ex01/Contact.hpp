@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 22:32:45 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/12 11:52:56 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 12:08:51 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 #include <cstdlib>
 #include <iomanip>
 #include <cstdio>
-#include <sstream>
+
 // #include "PhoneBook.hpp"
 typedef std::string str;
 class Contact{

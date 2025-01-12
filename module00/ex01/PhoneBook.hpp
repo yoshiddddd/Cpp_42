@@ -10,8 +10,8 @@
 #include <cstdlib>
 #include <iomanip>
 #include <cstdio>
+#include <sstream>
 #include "Contact.hpp"
-
 #define FIRST_NAME 0
 #define LAST_NAME 1
 #define NICKNAME 2
@@ -22,6 +22,7 @@ class PhoneBook{
     public:
         PhoneBook(){
             current_num = 0;
+            size = 0;
         };
         // ~PhoneBook();
         void addContact();

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/12 11:53:17 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 12:13:46 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,7 @@ void PhoneBook::searchContact(){
     }
     int roop=0;
     std::cout << "     index|first name| last name|  nickname" << std::endl;
+    std::cout << this->size << std::endl;
     while(this->size> roop)
     {
         str first_name = this->call_get_function(roop,FIRST_NAME);
@@ -107,14 +108,14 @@ void PhoneBook::searchContact(){
         std::cout << "Please put index" << std::endl;
         return;
     }
-    if(i.length() > 1){
+    if(i.length() > 1 ){
         std::cout << "Invalid index" << std::endl;
         return;
     }
     // index = std::stoi(i);
     std::stringstream ss(i);
     ss >> index;
-    if(index < 0 || index > 7 ||(index >= this->current_num && this->is_first_time == 0)){
+    if(index < 0 || index > 7 || !std::isdigit(index)||(index >= this->current_num && this->is_first_time == 0)){
         std::cout << "Invalid index" << std::endl;
         return;
     }
