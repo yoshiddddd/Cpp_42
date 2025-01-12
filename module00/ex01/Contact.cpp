@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/23 20:24:25 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/11 21:50:48 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/12 09:05:18 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,6 @@ void PhoneBook::addContact(){
         std::cout << "Invalid secret" << std::endl;
         return;
     }
-// system("clear");
-    // this->contact[this->current_num].set_first_name(first_name);
     this->contact[this->current_num].set_data(first_name,last_name,nickname,phone_number,secret);
     if(this->current_num<8 && this->is_first_time == 0){
         this->size++;
