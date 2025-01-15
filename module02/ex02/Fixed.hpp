@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/14 10:40:57 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/13 11:36:29 by yoshidakazu      ###   ########.fr       */
+/*   Created: 2025/01/13 14:16:46 by yoshidakazu       #+#    #+#             */
+/*   Updated: 2025/01/13 15:28:34 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.hpp"
+#include <iostream>
 
-HumanB::HumanB(std::string name) : m_name(name) {}
-
-void HumanB::setWeapon(Weapon& weapon)
-{
-	this->m_weapon = &weapon;
-}
-
-void HumanB::attack(void) const
-{
-	if (this->m_weapon)
-		std::cout << this->m_name << " attacks with their " << this->m_weapon->getType() << std::endl;
-	else
-		std::cout << this->m_name << " has no weapon!" << std::endl;
-}
+class Fixed{
+    private:
+        int fixed_point_value;
+        static const int fractional_bits = 8;
+    public:
+        Fixed();
+        ~Fixed();
+        Fixed(int);
+        Fixed(float);
+        Fixed(const Fixed &fixed); //コピーコンストラクタ
+        Fixed &operator=(const Fixed &fixed);
+        
+};
