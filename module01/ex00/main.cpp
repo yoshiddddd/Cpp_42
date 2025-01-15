@@ -6,14 +6,11 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 15:39:51 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/09/29 16:11:45 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/13 16:22:06 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "Zombie.hpp"
-
-
 
 int main(void)
 {

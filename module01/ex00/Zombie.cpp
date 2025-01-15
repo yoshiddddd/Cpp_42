@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 21:31:24 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/10/14 15:35:49 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/15 13:09:26 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Zombie::Zombie(str name){
     this->name = name;
-	std::cout << "Zombie" <<name <<"is born" << std::endl;
+	std::cout << "Zombie " <<name <<" is born" << std::endl;
 }
 
 Zombie::~Zombie()
