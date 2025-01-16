@@ -6,7 +6,7 @@
 /*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:55:02 by kyoshida          #+#    #+#             */
-/*   Updated: 2025/01/16 16:08:05 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/16 16:12:50 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ Zombie::~Zombie()
 }
 void Zombie::announce(void)
 {
-	// this->name = "Zombie";
 	std::cout << this->name << " BraiiiiiiinnnzzzZ..." << std::endl;
 	
 }
