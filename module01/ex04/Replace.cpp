@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Replace.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 08:06:59 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/09 09:04:46 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/16 16:42:20 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,12 @@ Replace::Replace(str filename, str s1, str s2) : m_filename(filename), m_s1(s1),
     if(filename.empty())
         std::cout << "error" << std::endl;
     
-    std::ifstream infile(m_filename);
+    std::ifstream infile(m_filename.c_str());
     if(!infile)
     {
         std::cout << "error infile" << std::endl;
     }
-    std::ofstream outfile(m_filename+".replace");
+    std::ofstream outfile((m_filename+".replace").c_str());
     if(!outfile)
         std::cout << "error outfile" << std::endl;
     str line;
