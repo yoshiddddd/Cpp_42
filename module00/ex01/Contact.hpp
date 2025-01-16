@@ -6,7 +6,7 @@
 /*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 22:32:45 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/12 12:08:51 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/12 13:57:51 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,10 @@
 #include <iomanip>
 #include <cstdio>
 
-// #include "PhoneBook.hpp"
 typedef std::string str;
 class Contact{
     public:
         Contact();
-        // ~Contact();
         str get_first_name(); 
         str get_last_name();
         str get_nickname();
@@ -34,7 +32,6 @@ class Contact{
         str get_secret();
         void set_data(str first_name , str last_name , str nickname , str phone_number , str secret);
     private:
-    // private変数にアクセスするにはpublicメンバ関数を使う必要がある。作る
         str first_name;
         str last_name;
         str nickname;
