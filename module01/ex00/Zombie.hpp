@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombie.hpp                                         :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 15:41:48 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2024/09/26 21:31:07 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/16 15:58:52 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,11 @@ class Zombie{
     public:
         Zombie(str name);
         ~Zombie();
-        // void set_name(str name);
-        Zombie *newZombie(str name);
-        void randomChump(str name);
-    private:
         void announce(void);
+        
+    private:
         str name;
 };
-
+void randomChump(str name);
+Zombie *newZombie(str name);
 #endif
