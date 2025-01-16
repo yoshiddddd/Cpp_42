@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:55:02 by kyoshida          #+#    #+#             */
-/*   Updated: 2024/10/21 22:09:09 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/16 16:08:05 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(){
-	std::cout << "Zombie" <<this->name <<"is born" << std::endl;
-}
+Zombie::Zombie(){}
 
 Zombie::~Zombie()
 {

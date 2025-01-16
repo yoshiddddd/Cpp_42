@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:56:37 by kyoshida          #+#    #+#             */
-/*   Updated: 2024/11/10 16:26:31 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/16 16:03:38 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ typedef std::string str;
         public:
             Zombie();
             ~Zombie();
-            Zombie *zombieHorde(int N, str name);
             void announce(void);
             void setName(str name);
         private:
             str name;
     };
+    Zombie *zombieHorde(int N, str name);
 
 #endif

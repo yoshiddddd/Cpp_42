@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 16:55:35 by kyoshida          #+#    #+#             */
-/*   Updated: 2024/11/10 16:31:57 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/16 16:03:32 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 
-Zombie *Zombie::zombieHorde(int N, std::string name)
+Zombie *zombieHorde(int N, std::string name)
 {
     int i = 0;
     Zombie *zombie = new Zombie[N];
