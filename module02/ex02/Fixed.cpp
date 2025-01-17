@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 14:16:16 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/17 17:48:45 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/17 17:56:19 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,7 @@ Fixed &Fixed::operator++() {
   return after_increment;
 }
 
+//引数にintを持つ方が後置とコンパイルされる
 Fixed Fixed::operator++(int) {
   Fixed before_increment = *this;
   this->fixed_point_value++;
@@ -113,6 +114,22 @@ Fixed Fixed::operator--(int) {
   Fixed before_decrement = *this;
   this->fixed_point_value--;
   return before_decrement;
+}
+
+Fixed &Fixed::min(Fixed &a, Fixed &b){
+    return a < b ? a : b;
+}
+
+const Fixed &Fixed::min(const Fixed &a, const Fixed &b){
+    return a < b ? a : b;
+}
+
+Fixed &Fixed::max(Fixed &a, Fixed &b){
+    return a > b ? a : b;
+}
+
+const Fixed &Fixed::max(const Fixed &a, const Fixed &b){
+    return a > b ? a : b;
 }
 
 int Fixed::getRawBits(void) const{
