@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 14:16:16 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/17 16:40:57 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/17 17:48:45 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,45 @@ Fixed Fixed::operator/(const Fixed &fixed) const{
     Fixed tmp;
     tmp.setRawBits((this->fixed_point_value << fractional_bits) / fixed.getRawBits());
     return tmp;
+}
+
+Fixed &Fixed::operator++() {
+  this->fixed_point_value++;
+  Fixed &after_increment = *this;
+  return after_increment;
+}
+
+Fixed Fixed::operator++(int) {
+  Fixed before_increment = *this;
+  this->fixed_point_value++;
+  return before_increment;
+}
+
+Fixed &Fixed::operator--() {
+  this->fixed_point_value--;
+  Fixed &after_decrement = *this;
+  return after_decrement;
+}
+
+Fixed Fixed::operator--(int) {
+  Fixed before_decrement = *this;
+  this->fixed_point_value--;
+  return before_decrement;
+}
+
+int Fixed::getRawBits(void) const{
+    return this->fixed_point_value;
+}
+
+void Fixed::setRawBits(int const raw){
+    this->fixed_point_value = raw;
+}
+
+float Fixed::toFloat(void) const{
+    return (float)fixed_point_value / (1 << fractional_bits);
+}
+
+int Fixed::toInt(void) const{
+    return (int)fixed_point_value / (1 << fractional_bits);
 }
 
