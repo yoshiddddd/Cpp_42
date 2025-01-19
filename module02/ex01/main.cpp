@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 12:43:10 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/13 13:27:39 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/19 15:40:52 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main( void ) {
 Fixed a;
-Fixed const b( 10 );
+Fixed const b( 12 );
 Fixed const c( 42.42f );
 Fixed const d( b );
 a = Fixed( 1234.4321f );

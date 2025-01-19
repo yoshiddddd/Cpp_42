@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 12:47:03 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/13 14:11:31 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/19 14:55:28 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
