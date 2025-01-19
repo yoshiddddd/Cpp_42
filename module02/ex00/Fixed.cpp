@@ -6,16 +6,15 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/12 23:21:14 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/13 12:35:30 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/19 09:05:34 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
 
-Fixed::Fixed(){
+Fixed::Fixed(): fixed_point_value(0){
     std::cout << "Default constructor called" << std::endl;
-    this->fixed_point_value = 0;
 }
 
 Fixed::Fixed(const Fixed &fixed){
