@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 22:17:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/20 08:39:44 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/20 22:13:42 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,11 @@
 
 class ClapTrap{
     private:
-        std::string name;
+        std::string _name;
         int _hit_points;
         int _energy_points;
         int _attack_damage;
+        bool is_move(void) const;
     public:
         ClapTrap();
         ClapTrap(std::string name);
