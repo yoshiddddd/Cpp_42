@@ -1,5 +1,5 @@
 NAME=ex01
-SRCS=main.cpp ClapTrap.cpp
+SRCS=main.cpp ClapTrap.cpp ScavTrap.cpp
 FLAGS=-Wall -Wextra -Werror -std=c++98 
 CC=c++
 OBJ=$(SRCS:.cpp=.o)
