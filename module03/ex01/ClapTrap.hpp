@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/18 22:17:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/22 13:06:32 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/23 12:08:20 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <string>
 
 class ClapTrap{
-    private:
+    protected:
         std::string _name;
         int _hit_points;
         int _energy_points;
@@ -35,14 +35,5 @@ class ClapTrap{
         void beRepaired(unsigned int amount);
 };
 
-class ScavTrap : public ClapTrap{
-    public:
-        ScavTrap();
-        ScavTrap(std::string name);
-        ScavTrap(const ScavTrap &scav);
-        ScavTrap &operator=(const ScavTrap &scav);
-        ~ScavTrap();
 
-        void guardGate(void);
-};
 #endif
