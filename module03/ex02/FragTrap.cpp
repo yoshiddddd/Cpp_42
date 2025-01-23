@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 13:50:55 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/23 14:29:50 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/23 14:44:43 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,8 @@ FragTrap &FragTrap::operator=(const FragTrap &frag){
 
 FragTrap::~FragTrap(){
     std::cout << "FragTrap Destructor called" << std::endl;
+}
+
+void FragTrap::highFivesGuys(void){
+    std::cout << "FragTrap " << _name << " is asking for high fives!" << std::endl;
 }
