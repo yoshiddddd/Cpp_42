@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 13:50:55 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/23 14:44:43 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/25 17:39:16 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ FragTrap &FragTrap::operator=(const FragTrap &frag){
 }
 
 FragTrap::~FragTrap(){
-    std::cout << "FragTrap Destructor called" << std::endl;
+    std::cout << "FragTrap " << _name << " Destructor called" << std::endl;
 }
 
 void FragTrap::highFivesGuys(void){

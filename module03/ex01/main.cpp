@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 12:18:57 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/23 12:19:25 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/25 17:31:33 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,58 +19,37 @@ static void put_line(void)
   std::cout << "- " << index++ << RULED_LINE << std::endl;
 }
 int main() {
-  // (constructor)ClapTrap ST_1 has been created!
-  // (constructor)ScavTrap ST_1 has been created!
-  ScavTrap s1("ST_1");
+  ScavTrap s1("ST");
 
-  put_line();
-  // ScavTrap ST_1 attacks target1, causing 20 points of damage!
+  put_line(); //0
   s1.attack("target1");
 
-  put_line();
-  // ClapTrap ST_1 takes 5 points of damage!
+  put_line(); //1
   s1.takeDamage(5);
 
-  put_line();
-  // ClapTrap ST_1 is repaired for 3 points!
+  put_line(); //2
   s1.beRepaired(3);
+  s1.takeDamage(150);
+  s1.attack("target2");
 
-  put_line();
-  // ScavTrap ST_1 is now in Gate keeper mode!
+  put_line(); //3
   s1.guardGate();
 
-  put_line();
-  // (constructor)ClapTrap Copy constructor called
-  // ClapTrap Copy assignment operator called
-  // (constructor)ScavTrap Copy constructor called
-  // ScavTrap Copy assignment operator called
-  // ClapTrap Copy assignment operator called
+  put_line(); //4
   ScavTrap s1_copy(s1);
 
-  put_line();
-  // ScavTrap ST_1 is now in Gate keeper mode!
+  put_line(); //5
   s1_copy.guardGate();
 
-  put_line();
-  // (constructor)ClapTrap Default constructor called
-  // (constructor)ScavTrap Default constructor called
+  put_line(); //6
   ScavTrap s1_assigned;
 
-  put_line();
-  // ScavTrap Copy assignment operator called
-  // ClapTrap Copy assignment operator called
+  put_line(); //7
   s1_assigned = s1;
 
-  put_line();
-  // ScavTrap ST_1 is now in Gate keeper mode!
+  put_line(); //8
   s1_assigned.guardGate();
 
-  put_line();
-  // (destructor)ScavTrap ST_1 has been destroyed!
-  // (destructor)ClapTrap ST_1 has been destroyed!
-  // (destructor)ScavTrap ST_1 has been destroyed!
-  // (destructor)ClapTrap ST_1 has been destroyed!
-  // (destructor)ScavTrap ST_1 has been destroyed!
-  // (destructor)ClapTrap ST_1 has been destroyed!
+  put_line(); //9
   return 0;
 }

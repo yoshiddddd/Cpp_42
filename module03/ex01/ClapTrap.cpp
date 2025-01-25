@@ -6,7 +6,7 @@
 /*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 08:43:09 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/25 15:42:33 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/25 17:48:53 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &clap){
 }
 
 ClapTrap::~ClapTrap(){
-    std::cout << "ClapTrap Destructor called" << std::endl;
+    std::cout << "ClapTrap " << _name << " Destructor called" << std::endl;
 }
 
 bool ClapTrap::is_move(void) const{
@@ -54,7 +54,6 @@ bool ClapTrap::is_move(void) const{
     return true;
 }
 
-//TODO is_moveで判定
 void ClapTrap::attack(const std::string &target){
     if(!is_move())
         return;
@@ -64,6 +63,8 @@ void ClapTrap::attack(const std::string &target){
 
 void ClapTrap::takeDamage(unsigned int amount){
     _hit_points -= amount;
+    if(_hit_points<0)
+        _hit_points = 0;
     std::cout << "ClapTrap " << _name << " take " << amount << " points of damage!" << std::endl;
 }
 
@@ -72,8 +73,6 @@ void ClapTrap::beRepaired(unsigned int amount){
         return;
     _energy_points -= 1;
     _hit_points += amount;
-    if(_hit_points<0)
-    _hit_points = 0;
     std::cout << "ClapTrap " << _name << " be repaired " << amount << " points!" << std::endl;
 }
 

@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 11:51:19 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/23 12:05:15 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/25 17:51:48 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
+
 #include "ClapTrap.hpp"
 
 class ScavTrap : public ClapTrap{

@@ -1,4 +1,4 @@
-NAME=ex03
+NAME=a.out
 SRCS=main.cpp ClapTrap.cpp
 FLAGS=-Wall -Wextra -Werror -std=c++98 
 CC=c++

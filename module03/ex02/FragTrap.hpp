@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 13:51:21 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/23 14:47:50 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/25 17:33:12 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

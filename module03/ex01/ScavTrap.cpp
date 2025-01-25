@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 12:08:38 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/23 12:15:36 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/25 17:39:05 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,13 +44,13 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &scav){
 }
 
 ScavTrap::~ScavTrap(){
-    std::cout << "ScavTrap Destructor called" << std::endl;
+    std::cout << "ScavTrap " << _name << " Destructor called" << std::endl;
 }
 
 void ScavTrap::attack(const std::string &target){
     if(!is_move())
         return;
-        _energy_points -= 1;
+    _energy_points -= 1;
     std::cout << "ScavTrap " << _name << " attacks " << target << ", causing " << _attack_damage << " points of damage!" << std::endl;
 }
 
