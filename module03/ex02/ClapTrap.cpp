@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 08:43:09 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/25 15:42:33 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/23 15:24:38 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ClapTrap::ClapTrap() : _hit_points(10), _energy_points(10), _attack_damage(0){
 }
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hit_points(10), _energy_points(10), _attack_damage(0){
-    std::cout << "ClapTrap"<< _name << " Name constructor called" << std::endl;
+    std::cout << "ClapTrap "<< _name << " Name constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &clap){
