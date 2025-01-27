@@ -1,27 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 22:51:11 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/27 22:52:49 by yoshidakazu      ###   ########.fr       */
+/*   Created: 2025/01/27 22:54:17 by yoshidakazu       #+#    #+#             */
+/*   Updated: 2025/01/27 22:54:28 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
-#include "Animal.hpp"
+#include "Dog.hpp"
 
-class Dog : public Animal
-{
-    public:
-        Dog();
-        Dog(const Dog &dog);
-        Dog &operator=(const Dog &dog);
-        virtual ~Dog();
-        virtual void makeSound() const;
-};
-
-#endif
+Dog::Dog() : Animal("Dog"){
+    std::cout << "Dog Default constructor called" << std::endl;
+}

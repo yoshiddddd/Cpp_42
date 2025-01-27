@@ -6,10 +6,12 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 23:38:00 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/27 22:50:37 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/27 22:52:57 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Dog.hpp"
+#include "Cat.hpp"
 
 int main()
 {
