@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 22:54:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/27 22:54:28 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/28 12:05:50 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,3 +15,4 @@
 Dog::Dog() : Animal("Dog"){
     std::cout << "Dog Default constructor called" << std::endl;
 }
+
