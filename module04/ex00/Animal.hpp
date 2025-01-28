@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 13:38:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/27 22:16:51 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/28 11:58:21 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class Animal
 {
     protected:
-        std::string type;
+        std::string _type;
     public:
         Animal();
         Animal(std::string type);
