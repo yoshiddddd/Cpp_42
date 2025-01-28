@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 13:38:01 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 12:11:50 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/28 21:37:35 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ Animal &Animal::operator=(const Animal &animal) {
         this->_type = animal._type;
     }
     std::cout << "Animal Copy Assigment operator Called" << std::endl;
+    return *this;
 }
 
 Animal::~Animal(void){

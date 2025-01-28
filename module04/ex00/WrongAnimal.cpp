@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 19:10:55 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 19:18:29 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/01/28 21:38:12 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ WrongAnimal &WrongAnimal::operator=(const WrongAnimal &wronganimal) {
         this->_type = wronganimal._type;
     }
     std::cout << "WrongAnimal Copy Assigment operator Called" << std::endl;
+    return *this;
 }
 
 WrongAnimal::~WrongAnimal(void){

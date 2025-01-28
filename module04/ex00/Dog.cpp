@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 22:54:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 12:40:36 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/28 21:37:47 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ Dog &Dog::operator=(const Dog &dog) {
         this->_type = dog._type;
     }
     std::cout << "Dog Copy Assigment operator Called" << std::endl;
+    return *this;
 }
 
 Dog::~Dog(void){
