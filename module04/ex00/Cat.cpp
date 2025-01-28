@@ -6,13 +6,14 @@
 /*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 22:54:37 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 12:26:12 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/28 12:40:50 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
 Cat::Cat(void) :Animal() {
+    _type = "Cat";
     std::cout << "Cat Default Constructor called" << std::endl;
 }
 

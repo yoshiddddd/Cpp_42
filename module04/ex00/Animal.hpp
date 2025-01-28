@@ -6,7 +6,7 @@
 /*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 13:38:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 11:58:21 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/28 12:44:40 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Animal
         Animal();
         Animal(std::string type);
         virtual ~Animal();
-        virtual void makeSound() const = 0;
+        virtual void makeSound() const ;
         std::string getType() const;
 };
 

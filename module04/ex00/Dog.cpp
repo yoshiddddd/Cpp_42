@@ -6,13 +6,14 @@
 /*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 22:54:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 12:27:47 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/01/28 12:40:36 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
 Dog::Dog(void) :Animal() {
+    _type = "Dog";
     std::cout << "Dog Default Constructor called" << std::endl;
 }
 
@@ -35,5 +36,5 @@ Dog::~Dog(void){
 
 void Dog::makeSound(void) const 
 {
-    std::cout << "meowwwwww" << std::endl;
+    std::cout << "ahwoooooooo" << std::endl;
 }
