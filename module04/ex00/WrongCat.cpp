@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 19:19:42 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 21:38:18 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/03 11:04:12 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ WrongCat &WrongCat::operator=(const WrongCat &wrongcat) {
     if(this != &wrongcat) {
         this->_type = wrongcat._type;
     }
-    std::cout
-        << "WrongCat Copy Assigment operator Called" << std::endl;
+    std::cout << "WrongCat Copy Assigment operator Called" << std::endl;
     return *this;
 }
 
@@ -35,3 +34,6 @@ WrongCat::~WrongCat(void){
     std::cout << "WrongCat destructor called" << std::endl;
 }
 
+void WrongCat::makeSound(void) const {
+    std::cout << "wrongmeowww" << std::endl;
+}
