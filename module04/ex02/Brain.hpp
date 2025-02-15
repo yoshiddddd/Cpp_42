@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 14:28:28 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/02/09 17:11:22 by kyoshida         ###   ########.fr       */
+/*   Updated: 2025/02/15 14:02:00 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ class Brain{
         Brain(const Brain &brain);
         Brain &operator=(const Brain &brain);
         virtual ~Brain();
-        void setIdea(int i, std::string idea);
-        std::string getIdea(int i) const;
 };
 
 

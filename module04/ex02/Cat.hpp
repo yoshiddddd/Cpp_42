@@ -6,16 +6,16 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 22:51:50 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/02/15 12:11:47 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 13:54:32 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_HPP
 # define CAT_HPP
 
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Brain.hpp"
-class Cat : public Animal
+class Cat : public AAnimal
 {
     private:
         Brain *_brain;
@@ -25,7 +25,6 @@ class Cat : public Animal
         Cat &operator=(const Cat &cat);
          ~Cat();
          void makeSound() const;
-        Brain *getBrain(void) const;
 };
 
 #endif
