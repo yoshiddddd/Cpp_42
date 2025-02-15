@@ -5,37 +5,44 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 22:54:37 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 21:37:58 by yoshidakazu      ###   ########.fr       */
+/*   Created: 2025/02/15 11:54:56 by yoshidakazu       #+#    #+#             */
+/*   Updated: 2025/02/15 12:11:57 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat(void) :Animal() {
-    _type = "Cat";
-    std::cout << "Cat Default Constructor called" << std::endl;
+Cat::Cat(void) : Animal(), _brain(new Brain()) {
+  _type = "Cat";
+  std::cout << "(constructor)Cat Default constructor called" << std::endl;
 }
 
-Cat::Cat(const Cat& cat) {
-    *this = cat;
-    std::cout << "Cat Copy Constructor Called" << std::endl;
+Cat::Cat(const Cat& other) : Animal(other), _brain(new Brain(*other._brain)) {
+  *this = other;
+  std::cout << "(constructor)Cat copy constructor called" << std::endl;
 }
 
-Cat &Cat::operator=(const Cat &cat) {
-    if(this != &cat) {
-        this->_type = cat._type;
-    }
-    std::cout << "Cat Copy Assigment operator Called" << std::endl;
-    return *this;
+Cat& Cat::operator=(const Cat& other) {
+  if (this != &other) {
+    Animal::operator=(other);
+    // deep copy：新しいメモリ領域を割り当て，データをコピーする
+    delete _brain;
+    _brain = new Brain(*other._brain);
+  }
+  std::cout << "Cat Copy assignment operator called" << std::endl;
+  return *this;
 }
 
-Cat::~Cat(void){
-    std::cout << "Cat destructor called" << std::endl;
+Cat::~Cat(void) {
+  delete _brain;
+  std::cout << "(constructor)Cat destructor called" << std::endl;
 }
 
+void Cat::makeSound(void) const {
+  std::cout << "(Cat sound)meowwwww" << std::endl;
+}
 
-void Cat::makeSound(void) const 
+Brain *Cat::getBrain(void) const
 {
-    std::cout << "meowwwwww" << std::endl;
+  return _brain;
 }
