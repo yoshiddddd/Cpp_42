@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 22:54:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/02/15 14:13:45 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 15:41:14 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog(void) : AAnimal(), _brain(new Brain()) { // deep copy：新しいメモリ領域を割り当て，データをコピーする
+Dog::Dog(void) : AAnimal(), _brain(new Brain()) {  
   _type = "Dog";
   std::cout << "(constructor)Dog Default constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog& dog) : AAnimal(dog),  _brain(new Brain(*dog._brain)) { // deep copy：新しいメモリ領域を割り当て，データをコピーする
+Dog::Dog(const Dog& dog) : AAnimal(dog),  _brain(new Brain(*dog._brain)) {
   *this = dog;
   std::cout << "(constructor)Dog copy constructor called" << std::endl;
 }

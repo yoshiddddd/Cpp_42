@@ -14,7 +14,6 @@
 # define AANIMAL_HPP
 
 #include <iostream>
-//抽象クラス
 class AAnimal
 {
     protected:

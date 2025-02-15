@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 19:19:42 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/02/03 11:04:12 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 16:26:31 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ WrongCat::WrongCat(const WrongCat& wrongcat) {
 
 WrongCat &WrongCat::operator=(const WrongCat &wrongcat) {
     if(this != &wrongcat) {
-        this->_type = wrongcat._type;
+        // this->_type = wrongcat._type;
+        WrongAnimal::operator=(wrongcat);
     }
     std::cout << "WrongCat Copy Assigment operator Called" << std::endl;
     return *this;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 13:38:17 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 21:36:43 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 16:07:50 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define ANIMAL_HPP
 
 #include <iostream>
-//抽象クラス
 class Animal
 {
     protected:

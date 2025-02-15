@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 11:54:56 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/02/15 12:11:57 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 15:43:58 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ Cat::Cat(const Cat& other) : Animal(other), _brain(new Brain(*other._brain)) {
 Cat& Cat::operator=(const Cat& other) {
   if (this != &other) {
     Animal::operator=(other);
-    // deep copy：新しいメモリ領域を割り当て，データをコピーする
     delete _brain;
     _brain = new Brain(*other._brain);
   }

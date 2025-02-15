@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 19:19:42 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 21:38:18 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 16:17:49 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,6 @@ WrongCat::~WrongCat(void){
     std::cout << "WrongCat destructor called" << std::endl;
 }
 
+void WrongCat::makeSound(void) const{
+    std::cout << "WrongCat meowwwww" << std::endl;
+}

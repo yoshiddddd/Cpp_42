@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 22:54:37 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/01/28 21:37:58 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 16:21:31 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ Cat::Cat(const Cat& cat) {
 
 Cat &Cat::operator=(const Cat &cat) {
     if(this != &cat) {
-        this->_type = cat._type;
+        // this->_type = cat._type;
+        Animal::operator =(cat);
     }
     std::cout << "Cat Copy Assigment operator Called" << std::endl;
     return *this;
