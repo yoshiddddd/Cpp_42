@@ -6,32 +6,45 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/23 23:38:00 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2025/02/03 11:05:36 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2025/02/15 14:57:30 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+
 #include "Cat.hpp"
-#include "WrongAnimal.hpp"
+#include "Dog.hpp"
 #include "WrongCat.hpp"
 
-int main()
+static void put_line(void)
 {
-const Animal* meta = new Animal();
-const Animal* j = new Dog();
-const Animal* i = new Cat();
-const WrongAnimal* dum = new WrongAnimal();
-const WrongCat* dumcat = new WrongCat();
+  static int index;
+  std::cout << "- " << index++ << " ────────────────────" << std::endl;
+}
 
-std::cout << dum->getType() << " " << std::endl;
-dumcat->makeSound();
-dum->makeSound();
 
-std::cout << j->getType() << " " << std::endl;
-std::cout << i->getType() << " " << std::endl;
-i->makeSound(); //will output the cat sound!
-j->makeSound();
-meta->makeSound();
+int main() {
+  const Animal* meta = new Animal();                  //  ①(constructor)Animal Default constructor called
+  const Animal* j = new Dog();                        //  ②(constructor)Animal Default constructor called ③(constructor)Dog Default constructor called
+  const Animal* i = new Cat();                        //  ④(constructor)Animal Default constructor called ⑤(constructor)Cat Default constructor called
+  const WrongAnimal* k = new WrongCat();              //  ⑥(constructor)WrongAnimal Default constructor called ⑦(constructor)WrongCat Default constructor called
 
-return 0;
+  put_line();
+  std::cout << j->getType() << " " << std::endl;      //  ⑧Dog
+  std::cout << i->getType() << " " << std::endl;      //  ⑨Cat
+  std::cout << k->getType() << " " << std::endl;      //  ⑩WrongCat
+
+  put_line();
+  i->makeSound();                                     //  ⑪(Cat sound)meowwwww
+  j->makeSound();                                     //  ⑫(Dog sound)Ahwoooooo
+  k->makeSound();                                     //  ⑬(WrongAnimal sound)
+  meta->makeSound();                                  //  ⑭(Animal sound)
+
+  put_line();
+  delete meta;                                        //  ⑮(constructor)Animal destructor called
+  delete k;                                           //  ⑯(constructor)WrongCat destructor called ⑰(constructor)WrongAnimal destructor called
+  delete j;                                           //  ⑱(constructor)Dog destructor called ⑲(constructor)Animal destructor called
+  delete i;                                           //  ⑳(constructor)Cat destructor called ㉑(constructor)Animal destructor called
+
+  put_line();
+  return 0;
 }
